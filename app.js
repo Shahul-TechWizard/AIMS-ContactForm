@@ -33,4 +33,5 @@ form.addEventListener("submit", (e) => {
     //   window.location.reload();
     // })
     .catch((error) => console.error("Error!", error.message));
+  alert("Thank you! your form is submitted successfully.");
 });
