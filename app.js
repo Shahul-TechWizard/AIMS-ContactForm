@@ -22,8 +22,8 @@ const scriptURL =
 const form = document.forms["contact-form"];
 
 form.addEventListener("submit", (e) => {
-  var submissionDateTime = new Date().toLocaleString();
-  document.getElementById("Timestamp").value = submissionDateTime;
+  // var submissionDateTime = new Date().toLocaleString();
+  // document.getElementById("Timestamp").value = submissionDateTime;
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) =>

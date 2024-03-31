@@ -9,6 +9,13 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function submitForm() {
+        var submissionDateTime = new Date().toLocaleString();
+        document.getElementById("submissionDateTime").value =
+          submissionDateTime;
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -69,7 +76,12 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off" name="contact-form">
+          <form
+            action="index.html"
+            autocomplete="off"
+            name="contact-form"
+            onsubmit="submitForm()"
+          >
             <h3 class="title">Contact Form</h3>
             <div class="input-container">
               <!-- Customer Name -->
