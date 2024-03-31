@@ -31,4 +31,7 @@ form.addEventListener("submit", (e) => {
     //   window.location.reload();
     // })
     .catch((error) => console.error("Error!", error.message));
+
+  var submissionDateTime = new Date().toLocaleString();
+  document.getElementById("Timestamp").value = submissionDateTime;
 });
