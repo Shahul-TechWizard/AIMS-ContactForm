@@ -10,11 +10,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function submitForm() {
+      window.onload = function () {
         var submissionDateTime = new Date().toLocaleString();
-        document.getElementById("submissionDateTime").value =
-          submissionDateTime;
-      }
+        document.getElementById("Timestamp").value = submissionDateTime;
+      };
     </script>
   </head>
   <body>
