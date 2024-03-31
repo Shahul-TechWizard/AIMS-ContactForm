@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <img
+            src="./AIMS_Logo.png"
+            alt=""
+            style="height: 150px; width: 230px; margin-left: 13%; padding: 0%"
+          />
+          <br /><br />
+          <h3 class="title" style="margin: 0%; padding: 0%">
+            AIMS Customer Details <br />
+            Registeration Sheet
+          </h3>
+          <p class="text"></p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>
+                Annai Indira Gandhi Rd, Poombukar thuniyagam basement, Panruti,
+                Tamil Nadu 607106
+              </p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>enquiry@aimstravels.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>63800 69599 , 74188 53599</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <!-- <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a> -->
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <!-- <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off" name="contact-form">
+            <h3 class="title">Contact Form</h3>
+            <div class="input-container">
+              <!-- Customer Name -->
+              <input type="text" name="Name" class="input" />
+              <label for="">Customer Name</label>
+              <span>Customer Name</span>
+            </div>
+            <!-- Customer Mobile Number -->
+            <div class="input-container">
+              <input type="tel" name="Mobile Number" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+
+            <!-- Purpose of Visit -->
+            <h3 class="title">Purpose of Visit</h3>
+            <select name="Purpose of Visit" id="Catagory">
+              <option value="General Services">General Services</option>
+              <option value="Job Application Support Services">
+                Job Application Support Services
+              </option>
+              <option value="Travel Services">Travel Services</option>
+              <option value="Tour Services">Tour Services</option>
+            </select>
+            <br />
+            <br />
+            <h3 class="title">Location</h3>
+            <select name="Location" id="Location">
+              <option value="Panruti">Panruti</option>
+              <option value="Villupuram">Villupuram</option>
+              <option value="Travel Services">Travel Services</option>
+              <option value="Tour Services">Tour Services</option>
+            </select>
+            <br />
+            <br />
+            <h3 class="title">Disposed By</h3>
+            <select name="Employee Name" id="Employee Name">
+              <option value="Rajeswari S">Rajeswari S</option>
+              <option value="Susmitha S">Susmitha S</option>
+              <option value="Gayathri S">Gayathri S</option>
+              <option value="Vasuthiyagarajan S">Vasuthiyagarajan S</option>
+              <option value="Kaviya M">Kaviya M</option>
+              <option value="Mathiazhagan">Mathiazhagan</option>
+              <option value="Mohamed Refai">Mohamed Refaix</option>
+              <option value="Shaffi Hussain">Shaffi Hussain</option>
+            </select>
+            <br />
+            <br />
+            <h3 class="title">Refered By</h3>
+            <select name="Customer Source" id="Customer Source">
+              <option value="AIMS">AIMS</option>
+              <option value="CR Digital Vibes">CR Digital Vibes</option>
+            </select>
+            <br />
+            <br />
+
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
