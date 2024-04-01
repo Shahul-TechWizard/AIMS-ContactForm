@@ -10,10 +10,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      window.onload = function () {
-        var submissionDateTime = new Date().toLocaleString();
-        document.getElementById("Timestamp").value = submissionDateTime;
-      };
+      function captureTime() {
+        var nameTime = new Date().toLocaleString();
+        document.getElementById("Timestamp").value = nameTime;
+      }
     </script>
   </head>
   <body>
@@ -84,7 +84,12 @@
             <h3 class="title">Contact Form</h3>
             <div class="input-container">
               <!-- Customer Name -->
-              <input type="text" name="Name" class="input" />
+              <input
+                type="text"
+                name="Name"
+                class="input"
+                oninput="captureTime()"
+              />
               <label for="">Customer Name</label>
               <span>Customer Name</span>
             </div>
