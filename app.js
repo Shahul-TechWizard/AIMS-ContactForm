@@ -17,7 +17,7 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzYIpZj89sm4f4EHbSwyg-zXLivooRMo-tP9i0GHgvfjIU8o3Z0B1HLz9S58k60bCXe/exec";
+  "https://script.google.com/macros/s/AKfycbwQLsDiSYTospUxZ3_aSQ5ZaIPGPwPu2w1DAQffbLuAqcu5LIqxSA-G7hM3N3bItoMr/exec";
 
 // var submissionDateTime = new Date().toLocaleString();
 // document.getElementById("submissionDateTime").value = submissionDateTime;
