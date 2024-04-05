@@ -3,51 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Disposition Form</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assests/img/favicon.ico">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <!-- icon -->
     <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
+      src="https://kit.fontawesome.com/027568b3d2.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-      function captureTime() {
-        var nameTime = new Date().toLocaleString();
-        document.getElementById("Timestamp").value = nameTime;
-      }
-    </script> -->
   </head>
+
   <body>
     <div class="container">
       <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
+      <img src="./assests/img/circle-design.png" class="square" alt="" />
+
       <div class="form">
         <div class="contact-info">
-          <img
-            src="./AIMS_Logo.png"
-            alt=""
-            style="height: 150px; width: 230px; margin-left: 13%; padding: 0%"
-          />
-          <br /><br />
-          <h3 class="title" style="margin: 0%; padding: 0%">
+          <img src="./assests/img/logo.png" alt="logo" class="logo" />
+
+          <h3 class="title" id="description">
             AIMS Customer Details <br />
             Registration Sheet
           </h3>
-          <p class="text"></p>
 
           <div class="info">
             <div class="information">
-              <img src="img/location.png" class="icon" alt="" />
+              <img src="./assests/img/location-icon.png" class="icon" alt="" />
               <p>
                 Annai Indira Gandhi Rd, Poombukar thuniyagam basement, Panruti,
                 Tamil Nadu 607106
               </p>
             </div>
             <div class="information">
-              <img src="img/email.png" class="icon" alt="" />
+              <img src="./assests/img/email-icon.png" class="icon" alt="" />
               <p>enquiry@aimstravels.com</p>
             </div>
             <div class="information">
-              <img src="img/phone.png" class="icon" alt="" />
+              <img src="./assests/img/phone-icon.png" class="icon" alt="" />
               <p>63800 69599 , 74188 53599</p>
             </div>
           </div>
@@ -55,18 +50,13 @@
           <div class="social-media">
             <p>Connect with us :</p>
             <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
+              <a href="#" aria-label="Visit AIMS Instagram Page">
+                <i class="fab fa-facebook"></i>
               </a>
-              <!-- <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a> -->
-              <a href="#">
+
+              <a href="https://www.instagram.com/aims_travels?igsh=MTl0M2NubWRpZ2U3dQ==" aria-label="Visit AIMS Facebook Page">
                 <i class="fab fa-instagram"></i>
               </a>
-              <!-- <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a> -->
             </div>
           </div>
         </div>
@@ -76,26 +66,36 @@
           <span class="circle two"></span>
 
           <form action="index.html" autocomplete="off" name="contact-form">
-            <!-- onsubmit="submitForm()" -->
+            <h3 class="title" id="form-title">Contact Form</h3>
 
-            <h3 class="title">Contact Form</h3>
             <div class="input-container">
               <!-- Customer Name -->
-              <input type="text" name="Name" class="input" />
-              <!-- oninput="captureTime()" -->
+              <input type="text" name="Name" class="input" title="Name" required/>
               <label for="">Customer Name</label>
               <span>Customer Name</span>
             </div>
+
             <!-- Customer Mobile Number -->
             <div class="input-container">
-              <input type="tel" name="Mobile Number" class="input" />
+              <input
+                type="tel"
+                name="Mobile Number"
+                class="input"
+                title="Phone"
+                required
+              />
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
 
             <!-- Purpose of Visit -->
             <h3 class="title">Purpose of Visit</h3>
-            <select name="Purpose of Visit" id="Catagory">
+            <select
+              name="Purpose of Visit"
+              id="Catagory"
+              title="Catagory"
+              class="input"
+            >
               <option value="General Services">General Services</option>
               <option value="Job Application Support Services">
                 Job Application Support Services
@@ -103,10 +103,14 @@
               <option value="Travel Services">Travel Services</option>
               <option value="Tour Services">Tour Services</option>
             </select>
-            <br />
-            <br />
+
             <h3 class="title">Location</h3>
-            <select name="Location" id="Location">
+            <select
+              name="Location"
+              id="Location"
+              title="Location"
+              class="input"
+            >
               <option value="Panruti">Panruti</option>
               <option value="Cuddalore">Cuddalore</option>
               <option value="Villupuram">Villupuram</option>
@@ -150,10 +154,14 @@
               <option value="Vellore">Vellore</option>
               <option value="Virudhunagar">Virudhunagar</option>
             </select>
-            <br />
-            <br />
+
             <h3 class="title">Disposed By</h3>
-            <select name="Employee Name" id="Employee Name">
+            <select
+              name="Employee Name"
+              id="Employee-Name"
+              title="Employee-Name"
+              class="input"
+            >
               <option value="Rajeswari S">Rajeswari S</option>
               <option value="Susmitha S">Susmitha S</option>
               <option value="Gayathri S">Gayathri S</option>
@@ -164,22 +172,32 @@
               <option value="Shaffi Hussain">Shaffi Hussain</option>
               <option value="Sheerin Banu A">Sheerin Banu A</option>
             </select>
-            <br />
-            <br />
+
             <h3 class="title">Refered By</h3>
-            <select name="Customer Source" id="Customer Source">
+            <select
+              name="Customer Source"
+              id="Customer-Source"
+              title="Customer Source"
+              class="input"
+            >
               <option value="AIMS">AIMS</option>
               <option value="CR Digital Vibes">CR Digital Vibes</option>
             </select>
-            <br />
-            <br />
-            <!-- <input type="hidden" id="Timestamp" name="Timestamp" /> -->
+
+            <input type="hidden" id="CustomerName" name="Customer Name"></input>
+            <input type="hidden" id="DateOfBirth" name="Date of Birth"></input>
+            <input type="hidden" id="FollowUp" name="Follow up"></input>
+            <input type="hidden" id="Qualification" name="Qualification" value=""></input>
+            <input type="hidden" id="Zone" name="Zone"></input>
+            <input type="hidden" id="Gender" name="Gender" value="Pending"></input>
+
+
             <input type="submit" value="Send" class="btn" />
           </form>
         </div>
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="./assests/js/script.js"></script>
   </body>
 </html>
