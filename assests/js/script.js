@@ -17,7 +17,7 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyEDzZ9GmY-OPZyn_n6PbRMpOCW8nhFZ5RvTlule1IfHzN-BMLTS4hfNM4wKuRrnFlH/exec";
+  "https://script.google.com/macros/s/AKfycbwIMvfn9F1iX7IRyLFrwymhrE-fLAdOgxcF6jxkHS6b4BNqH0k3CHSltlioBfsleS8Z/exec";
 
 const form = document.forms["contact-form"];
 
